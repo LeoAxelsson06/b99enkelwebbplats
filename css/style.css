@@ -1,0 +1,105 @@
+
+body{
+  background-color: rgb(12, 17, 82); /*Changes the background to the stated rgb value*/
+  font-size: 20px;
+  background-position: center;
+}
+
+header{
+  color: rgb(253, 244, 94); /*Changes the foreground color to the stated rgb value. The foreground color changes the text color*/
+  font-family: 'Bowlby One SC', cursive; /*This displays the text in my chosen font*/
+  font-size: 40px;
+}
+
+.sq{
+  background-size: cover; /*This resizes the picture to cover the entire square*/
+  background-position: center; /*This makes sure that the center of the picture always is at the senter of the square*/
+  color: rgb(253, 244, 94);
+  font-family: 'Bowlby One SC', cursive; /*This displays the text in my chosen font*/
+  border-radius: 80px; /*This rounds the corners with a radius of 80px*/
+  text-align: center; /*This aligns the text to the center*/
+  text-shadow: 3px 3px black;
+}
+
+.csq1{
+  background-image: url("../img/peralta.jpg"); /*This is the background image*/
+}
+
+.csq2{
+  background-image: url("../img/boyle.jpg");
+}
+
+.csq3{
+  background-image: url("../img/diaz.jpg");
+}
+
+
+.csq4{
+  background-image: url("../img/jeffords.jpg");
+
+}
+
+.csq5{
+  background-image: url("../img/santiago.jpg");
+}
+
+.csq6{
+  background-image: url("../img/holt.jpg");
+}
+
+.ssq1{
+background-image: url("../img/b99season1.jpg");
+}
+
+
+.ssq2{
+background-image: url("../img/b99season2.jpg");
+}
+
+.ssq3{
+background-image: url("../img/b99season3.jpg");
+}
+
+.ssq4{
+background-image: url("../img/b99season4.jpg");
+}
+
+.ssq5{
+background-image: url("../img/b99season5.jpg");
+}
+
+.ssq6{
+background-image: url("../img/b99season6.jpg");
+}
+
+.stext{
+  color: rgb(217, 222, 9);
+}
+
+nav{
+  color: rgb(253, 244, 94);
+  font-family: 'Bowlby One SC', cursive; /*This displays the text in my chosen font*/
+  font-size: 30px;
+}
+
+.fadeintext{
+  opacity: 0; /*This sets the fadeintexts opacity to 0 as default*/
+
+}
+
+.fadeintext:hover{ /*This is a statment that checks if the mouse is hovering over the element. If it is it exicutes the code below*/
+  opacity: 100%; /*It will bring the fadeintexts opacity to 100%, full*/
+  transition: 1.2s; /*It will go from 0% opacity to 100% opacity in 1.2 seconds to give it a smooth transition/animation*/
+}
+
+.standardlink{ /*I wanted all the links to look the same so I could put them all under the same styling*/
+  font-family: 'Bowlby One SC'; /*This displays the text in my chosen font*/
+  color: rgb(253, 244, 94);
+  font-style: none;
+}
+
+footer{
+  background-color: rgb(0, 19, 101);
+  color: rgb(253, 244, 94);
+  font-size: 15px;
+}

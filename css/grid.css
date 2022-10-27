@@ -1,0 +1,95 @@
+.container{ /*What I put in here will be true for eveerything on the page*/
+  display: grid; /*This displays everything in a grid*/
+  grid-gap: 10px; /*Grid gap, means how much space I want in between the elements*/
+  grid-auto-rows: minmax(60px, auto); /*Grid-auto-rows means that th will display as many rowns as the content needs to fit. Minmax(60px, auto) means that the rowns will be at least 60 pixels tall and maximm to fit the contetn said to fin in that space.*/
+  grid-template-columns: repeat(12, 1fr); /*This defines how many columns there should be. In this case there are 12 colums and all of them are 1 fraction unit of the screens width*/
+  grid-template-areas:
+    " h h h h h h h h h h h h "
+    " m m m m m m m m m m m m "
+    " sq1 sq1 sq1 sq1 sq2 sq2 sq2 sq2 sq3 sq3 sq3 sq3 " /*This defines the layout of the page*/
+    " sq4 sq4 sq4 sq4 sq5 sq5 sq5 sq5 sq6 sq6 sq6 sq6 "
+    " f f f f f f f f f f f f "
+
+}
+
+body{
+  padding: 0; /*This is to eliminate any already existing space between elements*/
+  margin: 0;
+  border: 0;
+}
+
+header{
+ grid-area: h; /*This is just the "variable" used to define this div in the playout*/
+ display: flex; /*This displays all the elements inside the header div in a flexbox*/
+ justify-content: center; /*This denters all the content inside the flexbox*/
+}
+
+.sq{
+  height: 80vh; /*This makes the squares 80% as tall as the screen*/
+}
+
+.sq1{
+    grid-area: sq1; /*This is just the "variable" used to define this div in the playout*/
+
+}
+
+.sq2{
+    grid-area: sq2; /*This is just the "variable" used to define this div in the playout*/
+}
+
+.sq3{
+    grid-area: sq3; /*This is just the "variable" used to define this div in the playout*/
+}
+
+.sq4{
+    grid-area: sq4; /*This is just the "variable" used to define this div in the playout*/
+}
+
+.sq5{
+    grid-area: sq5; /*This is just the "variable" used to define this div in the playout*/
+}
+
+.sq6{
+    grid-area: sq6; /*This is just the "variable" used to define this div in the playout*/
+}
+
+nav{
+  grid-area: m; /*This is just the "variable" used to define this div in the playout*/
+  display: flex; /**/
+  justify-content: space-around;
+  margin-left: 200px; /*The margin is set to 200 pixels on each side to bring the elements slightly closer to the center and each other*/
+  margin-right: 200px;
+}
+
+footer{
+  grid-area: f; /*This is just the "variable" used to define this div in the playout*/
+  display: flex; /*This displays all the elements inside the footer div in a flexbox*/
+  justify-content: space-around; /*This spaces out the elements in the flex box sort of like around a cylider. Its like you wrote something on each side of an cylinder and the n cut it up and layed it flat. In this case, that means that there is doubble the space between the elemts as there is between the elements and the edge*/
+}
+
+@media only screen and (max-width: 1020px){ /*If the screen gets smaller than the defined width the already stated grid code will be overwritten by the grid cde below the statement. If there is no code to over write the old code, the old code will be active*/
+  .container{
+    display: grid;
+    grid-template-areas:
+
+    "h h h h h h h h h h h h "
+    "m m m m m m m m m m m m "
+    "sq1 sq1 sq1 sq1 sq1 sq1 sq2 sq2 sq2 sq2 sq2 sq2"
+    "sq3 sq3 sq3 sq3 sq3 sq3 sq4 sq4 sq4 sq4 sq4 sq4"
+    "sq5 sq5 sq5 sq5 sq5 sq5 sq6 sq6 sq6 sq6 sq6 sq6"
+    "f f f f f f f f f f f f "
+
+  }
+
+header{
+  font-size: 150%; /*This changes the fontsize to 150% of the starter value*/
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 0; /*The margins are sett to 0 to space the elements out*/
+  margin-right: 0;
+}
+
+}
