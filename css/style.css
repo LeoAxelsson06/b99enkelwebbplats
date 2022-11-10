@@ -18,6 +18,7 @@ header{
   border-radius: 80px; /*This rounds the corners with a radius of 80px*/
   text-align: center; /*This aligns the text to the center*/
   text-shadow: 3px 3px black;
+  font-size: 20px;
 }
 
 .csq1{
@@ -47,7 +48,7 @@ header{
 }
 
 .ssq1{
-background-image: url("../img/b99season1lc.webp");
+background-image: url("../img/b99season1.webp");
 }
 
 
@@ -64,7 +65,7 @@ background-image: url("../img/b99season4.webp");
 }
 
 .ssq5{
-background-image: url("../img/b99season5lc.webp");
+background-image: url("../img/b99season5.webp");
 }
 
 .ssq6{
